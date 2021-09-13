@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title></title>      
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=all' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/remodal.css">
+        <link rel="stylesheet" href="css/remodal-default-theme.css">        <script src="js/jspdf.min.js"></script>
+        <script src="js/jspdf.plugin.autotable.src.js"></script>
+
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+         <!--<script type="text/javascript" src="js/Chart.js"></script>-->
+        <script>
+            window.REMODAL_GLOBALS = {
+                DEFAULTS: {
+                    hashTracking: false,                    closeOnOutsideClick: false
+                }
+            };
+        </script>
+       <script type="text/javascript" src="js/remodal.js"></script>
+        
+    </head>
+    <body>
+       <div class="wrapper">
+            <div class="content">
+                <div class="controls">
+                    <div style="float: right">
+                        <a data-remodal-target="add_win" class="new_object">Add</a> 
+                        <a data-remodal-target="add_filter" class="сrit_filter">Filter</a>
+                        <a data-remodal-target="add_otchet" class="otchet">Отчет</a>
+                    </div>
+
+                    <select id="myselect" name="tables">
+		                <option value="5">Select a table:</option>
+		                <option value="1">books</option>
+		                <option value="2">authors</option>
+		                <option value="3">publishers</option>
+		                <option value="4">types</option>
+                        <option value="5">customers</option>
+                        <option value="6">shopcart</option>
+	                </select> 
+
+                    <label>Поиск: </label>
+                    <input  id="search" type="text" placeholder="">
+                    <button class="src" >Search</button>
+                    <label>Sort:</label>
+                    <select id="sort" name="sort">
+		                <option value="0">id</option>
+		                
+	                </select> 
+                </div>
+                
+
+                <table class="object_list styles_list">
+                </table>
+                
+            </div>
+        </div>
+
+        <div style="display: none">
+           
+             <div class="remodal add_win" data-remodal-id="add_win">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Добавить запись</h1>
+                <form enctype="multipart/form-data">
+                    <div class="add_obj_crits"></div>
+                    <input type="hidden" name="data" value="0">
+                </form>
+                <button class="button">Сохранить</button>
+            </div>
+
+            <div class="remodal view_object" data-remodal-id="view_object">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1></h1>
+                <form enctype="multipart/form-data">
+                    <div class="edit_obj_crits"></div>
+                    <input type="hidden" name="data">
+                </form>
+                <button class="del">Удалить</button>
+                <button class="button">Сохранить</button>
+            </div>
+
+            <div class="remodal add_filter" data-remodal-id="add_filter">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Добавить фильтр</h1>
+                <form enctype="multipart/form-data">
+                    <div class="add_filter_crits"></div>
+                    <input type="hidden" name="data" value="0">
+                </form>
+                <button class="button">Применить</button>
+            </div>
+
+            <div class="remodal add_otchet" data-remodal-id="add_otchet">
+                <button data-remodal-action="close" class="remodal-close"></button>
+                <h1>Выберите отчет</h1>
+                <form enctype="multipart/form-data">
+                    <div class="add_crit_otchet"></div>
+                    <input type="hidden" name="data" value="0">
+                </form>
+                <button class="button" >Применить</button>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
+<!--onclick="window.location.href='../includes/otchet.php'"-->

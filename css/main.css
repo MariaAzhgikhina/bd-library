@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: 'PT Sans', sans-serif;
+    outline: none;
+}
+
+input[type="submit"], button{
+   -webkit-appearance: none!important; 
+}
+
+input[type="radio"] {
+    border: 0;
+    background: #fff;
+    font-size: 16px;
+    font-family: Verdana;
+    line-height: 30px;
+    padding: 0 8px;
+}
+.controls button{
+    display: inline-block;
+    height: 30px;
+    border: 0;
+    padding: 0 20px;
+    background: rgb(255, 255, 255);
+    font-family: 'PT Sans', sans-serif;
+    color: #000;
+    font-size: 16px;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+body{
+    background: #fff;
+    font-size: 16px;
+    color: #000;
+}
+
+.wrapper{
+    width: 1000px;
+    margin: 100px auto 0 auto;
+    background: #ececec;
+}
+.controls select, .controls input {
+    border: 0;
+    background: #fff;
+    font-size: 16px;
+    font-family: Verdana;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+}#select_otch,  #select_fil{
+    border: 1px solid rgba(0, 0, 0, 0.29);
+}.controls label {
+    padding: 0 8px;
+}
+.controls{
+    padding: 10px 20px;
+    background: #e1e1e1;
+}
+
+.controls a{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.controls a:hover{
+    background: #126286;
+    color: #fff;
+}
+
+a.compare{
+    background: #126286;
+    color: #fff;
+}
+
+.controls a.disabled{
+    cursor: default;
+    background: #fff;
+    color: #000;
+    opacity: 0.5;
+}
+TABLE { 
+    width: 800px; /* Ширина таблицы */
+    border: 2px solid #777; /* Рамка вокруг таблицы */
+    margin: 10px auto 10px auto;
+    border-radius: 2px;
+    border-spacing: 0;
+   }
+   TD, TH { 
+    text-align: center; /* Выравнивание по центру */
+    padding: 3px; /* Поля вокруг содержимого ячеек */
+   }
+   TH { 
+    background: rgba(65, 123, 171, 0.26); /* Цвет фона */
+    color: white; /* Цвет текста */
+    border-bottom: 2px solid black; /* Линия снизу */
+   }
+    .lc { 
+    border-right: 1px solid #777;
+    cursor: pointer;
+
+   }
+   .lc:hover { 
+    background: #126286;
+    color: #fff; /* Выравнивание по левому краю */
+   }
+
+.remodal h1{
+    margin-bottom: 20px;
+}
+
+.remodal .button{
+    display: inline-block;
+    height: 40px;
+    border: 0;
+    padding: 0 20px;
+    background: #126286;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    vertical-align: top;
+    outline: none;
+}
+
+.remodal .del{
+    display: inline-block;
+    height: 40px;
+    border: 0;
+    padding: 0 20px;
+    background: #b00a0a;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 30px;
+    vertical-align: top;
+    outline: none;
+    margin-top: 10px;
+}
+
+.add_crit_form label{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.remodal input[type="text"]{
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #126286;
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+    padding: 0 10px;
+    outline: none;
+    vertical-align: top;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+
+.remodal h2{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.add_win div{
+    margin-bottom: 10px;
+}
+
+.add_win input[type="text"]{
+    margin: 0;
+    width: 80%;
+}
+
+.view_object label, .add_filter label, add_otchet label, .otch label{
+    display: inline-block;
+    width: 40%;
+    padding-right: 5%;
+    text-align: right;
+    line-height: 40px;
+    vertical-align: top;
+}
+
+.view_object input[type="text"], .add_filter input[type="text"], .add_otchet input[type="text"]{
+    width: 45%;
+}
+
+.view_object div, .add_filter div, .add_otchet div{
+    margin-bottom: 10px;
+}
+
+.view_object .button, .add_filter button, .add_otchet button{
+    margin-top: 10px;
+}
+
+.crit_type{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.loading{
+    position: relative;
+    color: #126286!important;
+}
+
+.loading::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 50%;
+    margin-left: -15px;
+    background-size: 100% 100%;
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHdpZHRoPSc3NnB4JyBoZWlnaHQ9Jzc2cHgnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIiBjbGFzcz0idWlsLXJpbmctYWx0Ij48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgZmlsbD0ibm9uZSIgY2xhc3M9ImJrIj48L3JlY3Q+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0iI2ZmZmZmZiIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48L2NpcmNsZT48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3Ryb2tlPSIjMTI2Mjg2IiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hvZmZzZXQiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiBmcm9tPSIwIiB0bz0iNTAyIj48L2FuaW1hdGU+PGFuaW1hdGUgYXR0cmlidXRlTmFtZT0ic3Ryb2tlLWRhc2hhcnJheSIgZHVyPSIycyIgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiIHZhbHVlcz0iMTUwLjYgMTAwLjQ7MSAyNTA7MTUwLjYgMTAwLjQiPjwvYW5pbWF0ZT48L2NpcmNsZT48L3N2Zz4=);
+}
+.error {
+    border: 2px solid #bb2727 !important;
+}
+
+
